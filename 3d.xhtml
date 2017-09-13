@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<title>HTML Events on 3D objects</title>
-        <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script> 
-        <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link> 
+        <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+        <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
 	</head>
-       
+
 <body>
 
     <h1>HTML Events on 3D objects</h1>
-	Experimental 'onclick' event on 3D objects (that is still totally open for discussion). <br />	
+	Experimental 'onclick' event on 3D objects (that is still totally open for discussion). <br />
 	Just click on one of the objects... The current state only shows what are we aiming at. <br />
 
 	<p>
@@ -20,9 +20,9 @@
 			<Scene>
 				<Viewpoint centerOfRotation="0 0 0" position="0 0 15" orientation="0 1 0 0" />
 				<Background skyColor='.95 .95 .95' />
-				
+
                 <Group onclick="document.getElementById('bar').setAttribute('translation', event.hitPnt);">
-                
+
 				<Transform DEF="coneTrafo" translation="-4.5 0 0">
 					<Shape DEF="coneShape">
 						<Appearance DEF="coneApp">
@@ -31,25 +31,25 @@
 						<Cone DEF="cone" onclick="location.href='http://google.com';"/>
 					</Shape>
 				</Transform>
-				
+
 				<Transform DEF="boxTrafo" translation='-1.5 0 0'>
 					<Shape DEF="boxShape">
-						<Appearance DEF="boxApp"> 
+						<Appearance DEF="boxApp">
 							<Material diffuseColor="1 0 0" specularColor=".5 .5 .5" />
 						</Appearance>
-						<Box DEF="box" onclick="location.href='http://google.com';" />
+						<Box DEF="box" onclick="location.href='https://www.youtube.com/watch?v=FQsBmnZvBdc';" />
 					</Shape>
 				</Transform>
-                
+
 				<Transform DEF="sphereTrafo" translation="1.5 0 0">
 					<Shape DEF="sphereShape">
 						<Appearance DEF="sphereApp">
 							<Material diffuseColor="0 0 1" specularColor=".5 .5 .5" />
 						</Appearance>
-						<Sphere DEF="sphere" onclick="location.href='http://google.com';" />
+						<Sphere DEF="sphere" onclick="location.href='https://www.youtube.com/watch?v=FQsBmnZvBdc;" />
 					</Shape>
 				</Transform>
-				
+
 				<Transform DEF="cylinderTrafo" translation="4.5 0 0">
 					<Shape DEF="cylinderShape">
 						<Appearance DEF="cylinderApp">
@@ -58,13 +58,13 @@
 						<text string='"Times 32px" "begin; default quality"' solid='false' onclick="location.href='https://www.w3schools.com/';">
 							<fontstyle family="'Times' 'Orbitron'" size="0.8" justify="begin"></fontstyle>
 						</text>
-			
-						
+
+
 					</Shape>
 				</Transform>
-                
+
                 </Group>
-                
+
                 <Transform id="bar" DEF="foo" scale=".15 .15 .15">
 					<Shape>
 						<Appearance>
@@ -73,14 +73,14 @@
 						<Sphere />
 					</Shape>
                 </Transform>
-				
-                
+
+
 			</Scene>
         </X3D>
 	</p>
-	
+
 	<p> &nbsp; </p>
-	
-   
+
+
 </body>
 </html>
